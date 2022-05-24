@@ -1,0 +1,12 @@
+.header__wrapper{
+    display: flex;
+    justify-content: center;
+    max-height: 35px;
+    width: 100%;
+}
+
+.header__logo{
+    font-weight: 600;
+    font-size: 2rem;
+    height: 100%;
+}
