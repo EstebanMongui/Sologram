@@ -1,0 +1,29 @@
+@import url('../icons/style.css');
+.like-button{
+    position: absolute;
+    z-index: 2;
+    right: 0.5rem;
+    bottom: 45px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+}
+
+.like-button:hover{
+    cursor: pointer;
+}
+
+.icon-like{
+    padding: 1rem;
+    font-size: 2rem;
+    color: var(--secondary-action);
+    transition: 0.5s;
+    transition-property: ;
+}
+
+.clicked .icon-like{
+    color: var(--secondary-action-focus);
+}
