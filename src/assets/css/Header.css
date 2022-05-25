@@ -6,7 +6,9 @@
 }
 
 .header__logo{
+    color: var(--primary-color);
     font-weight: 600;
     font-size: 2rem;
     height: 100%;
+    font-family: 'Oleo Script', cursive;
 }
