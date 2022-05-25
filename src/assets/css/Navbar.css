@@ -1,9 +1,10 @@
 .navbar__wrapper{
-    position: absolute;
-    top: calc(100vh - 35px);
+    position: fixed;
+    bottom: 0px;
     left: 0px;
     display: flex;
     justify-content: space-around;
-    max-height: 35px;
+    height: 100vh;
+    max-height: 50px;
     width: 100%;
 }
