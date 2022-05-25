@@ -11,3 +11,9 @@
     --primary-color: #3365FF;
     --secondary-color: #4371FF;
 }
+
+/* Colors-Font */
+*{
+    --text-primary-color: #000;
+    --text-secondary-color: #999999;
+}
