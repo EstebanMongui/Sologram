@@ -1,0 +1,22 @@
+.button{
+    width: calc(100vw - 0.6rem);
+    height: 2.5rem;
+    max-width: 500px;
+    margin: 0.3rem;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    background-color: var(--primary-action-focus);
+    color: var(--secondary-action);
+    transition: 0.5s;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: var(--primary-action);
+    color: var(--primary-action-focus);
+}
+
+.button.clicked{
+    background-color: var(--primary-action);
+    color: var(--primary-action-focus);
+}
