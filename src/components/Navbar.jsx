@@ -5,7 +5,7 @@ import '../assets/css/Navbar.css'
 const Navbar = () => {
   return (
     <div className='navbar__wrapper'>
-        <NavButton text={'h'} path='/'/>
+        <NavButton iconClass={'icon-home'} path='/'/>
         <NavButton text={'+'} path='/new-post'/>
     </div>
   )
