@@ -1,0 +1,13 @@
+/* Colors-Actions */
+*{
+    --primary-action: #D5D5D5;
+    --secondary-action: #fff;
+    --primary-action-focus: #000;
+    --secondary-action-focus: #ce260c;
+}
+
+/* Colors-Brand */
+*{
+    --primary-color: #3365FF;
+    --secondary-color: #4371FF;
+}
