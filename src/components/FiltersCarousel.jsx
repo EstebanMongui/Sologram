@@ -2,8 +2,8 @@ import React from 'react'
 import Filter from './Filter'
 import '../assets/styles/FiltersCarousel.css'
 
-const FiltersCarousel = ({ filters, imageUrl }) => {
-  
+const FiltersCarousel = ({ filters, imageUrl, handleClick }) => {
+
     return (
         <div className='filters-carousel mt3 ml2'>
             {
@@ -14,6 +14,7 @@ const FiltersCarousel = ({ filters, imageUrl }) => {
                             filterId={id} 
                             filterName={name} 
                             imageUrl={imageUrl}
+                            handleClick={handleClick}
                         />
                     )
                 })

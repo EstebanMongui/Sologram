@@ -1,9 +1,9 @@
 import React from 'react'
 import '../assets/styles/Filter.css'
 
-const Filter = ({ imageUrl, filterName, filterId }) => {
+const Filter = ({ imageUrl, filterName, filterId, handleClick }) => {
   return (
-    <div className='filter'>
+    <div className='filter' onClick={() => handleClick( filterId )}>
         <p className='filter__name'>{filterName}</p>
         <figure className='filter-thumbnail'>
             <img 
