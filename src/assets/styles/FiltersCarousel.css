@@ -1,0 +1,6 @@
+.filters-carousel{
+    display: flex;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    height: auto;
+}

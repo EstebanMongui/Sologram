@@ -1,0 +1,35 @@
+@import url(filters.css);
+
+.filter{
+    padding-right: 1rem;
+}
+.filter__name{
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: .8rem;
+    font-weight: 500;
+    padding: .2rem 0;
+}
+.filter-thumbnail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: black;
+    max-width: 20vw;
+    min-width: 100px;
+    max-height: 20vw;
+    min-height: 100px;
+    overflow: hidden;
+    width: 100%;
+}
+.filter-thumbnail::after{
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}
+.filter-thumnail__image{
+    object-fit:fill;
+    height: 100%;
+}

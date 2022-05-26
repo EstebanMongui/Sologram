@@ -1,0 +1,20 @@
+.input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+.input__label{
+    padding: 0.3rem 0;
+}
+.input__field{
+    height: 2rem;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+    border: solid 1.5px var(--primary-action);
+}
+.input__field:focus{
+    outline: unset;
+}

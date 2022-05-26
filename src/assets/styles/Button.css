@@ -1,0 +1,20 @@
+.button{
+    height: 4rem;
+    max-width: 500px;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    background-color: var(--primary-action-focus);
+    color: var(--secondary-action);
+    transition: 0.5s;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: var(--primary-action);
+    color: var(--primary-action-focus);
+}
+
+.button.clicked{
+    background-color: var(--primary-action);
+    color: var(--primary-action-focus);
+}

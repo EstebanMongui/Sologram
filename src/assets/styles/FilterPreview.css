@@ -1,0 +1,29 @@
+.filter-preview{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    max-height: 500px;
+    max-width: 500px;
+    background-color: black;
+}
+.filter-preview__wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    overflow: hidden;
+    padding: 0rem 0rem;
+}
+
+.filter-preview__wrapper::after{
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}
+
+.filter-preview__wrapper--image{
+    position: absolute;
+    object-fit: fill;
+    height: 100%;
+}
