@@ -22,8 +22,11 @@ const FeedCard = ({imageName, timeAgo, imageUrl, filterId}) => {
       setClicks(0)
     }, 250)
     
-    clicks >= 2 && onClick()
   }
+  
+  useEffect(()=>{
+    clicks >= 2 && onClick()
+  }, [clicks])
 
   useEffect(()=>{
     isLike
