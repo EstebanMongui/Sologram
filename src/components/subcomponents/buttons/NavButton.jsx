@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import '../../../assets/css/NavButton.css'
+import '../../../assets/styles/NavButton.css'
 
 const NavButton = ({ iconClass, text, path }) => {
 
