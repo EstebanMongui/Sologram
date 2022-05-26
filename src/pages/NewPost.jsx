@@ -22,6 +22,8 @@ const NewPost = () => {
     const {handleChange:handleChangeImage, state:imageName} = useHandleChange()
     
     const handleClick = () => {
+        if(!imageUrl || !imageName) return
+
         const data = {
             imageName,
             imageUrl,
@@ -30,6 +32,10 @@ const NewPost = () => {
         }
 
         saveData({ data })
+
+        setTimeout(()=>{
+            window.location.replace('/')
+        }, 2000)
     }
 
     return (
