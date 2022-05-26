@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Input from '../components/Input'
 import FilterPreview from '../components/FilterPreview'
 import FiltersCarousel from '../components/FiltersCarousel'
@@ -20,6 +20,7 @@ const NewPost = () => {
   
     const {handleChange, state:imageUrl} = useHandleChange()
     const {handleChange:handleChangeImage, state:imageName} = useHandleChange()
+    const [filterId, setFilterId] = useState('')
     
     const handleClick = () => {
         if(!imageUrl || !imageName) return
@@ -27,7 +28,7 @@ const NewPost = () => {
         const data = {
             imageName,
             imageUrl,
-            filterId:'',
+            filterId,
             like: false
         }
 
@@ -38,16 +39,21 @@ const NewPost = () => {
         }, 2000)
     }
 
+    const handleFilter = (filterId) =>{
+        console.log('FilterId: ', filterId)
+        setFilterId(filterId)
+    }
+
     return (
         <div className='new-post w-100'>
             <dir className='ph2 pv1'>
                 <Input label={'Enter an image url:'} handleChange={ handleChange } value={ imageUrl }/>
             </dir>
-            <FilterPreview imageUrl={ imageUrl } imageName={imageName}/>
+            <FilterPreview imageUrl={ imageUrl } imageName={ imageName } filterId={ filterId }/>
             <div className='ph2'>
                 <Input label={'Give it a name:'} handleChange={ handleChangeImage } value={ imageName }/>
             </div>
-            <FiltersCarousel filters={filters} imageUrl={ imageUrl } />
+            <FiltersCarousel filters={filters} imageUrl={ imageUrl } handleClick={handleFilter}/>
             <div className='ph2 pv2'>
                 <Button buttonText={'Post now!'} onClick={ handleClick }/>
             </div>
