@@ -1,5 +1,5 @@
 import React from 'react'
-import '../assets/styles/FilterImage.css'
+import '../assets/styles/FilterPreview.css'
 
 const FilterPreview = ({ imageUrl, imageName, filterId }) => {
 
