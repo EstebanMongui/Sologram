@@ -1,4 +1,8 @@
 .header__wrapper{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
     display: flex;
     justify-content: center;
     max-height: 70px;
