@@ -4,7 +4,7 @@ import '../assets/css/Navbar.css'
 
 const Navbar = () => {
   return (
-    <div className='navbar__wrapper'>
+    <div className='navbar__wrapper bt b--black-30'>
         <NavButton iconClass={'icon-home'} path='/'/>
         <NavButton text={'+'} path='/new-post'/>
     </div>

@@ -34,15 +34,15 @@ const NewPost = () => {
 
     return (
         <div className='new-post w-100'>
-            <dir className='pa2'>
+            <dir className='ph2 pv1'>
                 <Input label={'Enter an image url:'} handleChange={ handleChange } value={ imageUrl }/>
             </dir>
             <FilterPreview imageUrl={ imageUrl } imageName={imageName}/>
-            <div className='pa2'>
+            <div className='ph2'>
                 <Input label={'Give it a name:'} handleChange={ handleChangeImage } value={ imageName }/>
             </div>
             <FiltersCarousel filters={filters} imageUrl={ imageUrl } />
-            <div className='pa2'>
+            <div className='ph2 pv2'>
                 <Button buttonText={'Post now!'} onClick={ handleClick }/>
             </div>
         </div>

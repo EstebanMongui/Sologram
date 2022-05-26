@@ -9,7 +9,8 @@ const FiltersCarousel = ({ filters, imageUrl }) => {
             {
                 filters.map(({id, name}) => {
                     return(
-                        <Filter 
+                        <Filter
+                            key={id} 
                             filterId={id} 
                             filterName={name} 
                             imageUrl={imageUrl}

@@ -4,7 +4,7 @@ import '../assets/css/Header.css'
 
 const Header = () => {
   return (
-    <div className='header__wrapper'>
+    <div className='header__wrapper bb b--black-30'>
       <Link to='/'>
         <h1 className='header__logo'>Sologram</h1>
       </Link>
