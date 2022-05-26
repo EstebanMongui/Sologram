@@ -1,0 +1,10 @@
+.navbar__wrapper{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    max-height: 50px;
+    width: 100%;
+}
