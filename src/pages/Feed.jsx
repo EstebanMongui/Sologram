@@ -31,7 +31,7 @@ const Feed = () => {
                 </Link>
             </div>
             :
-            posts.map(post => {
+            posts.reverse().map(post => {
                 const {
                     id,
                     imageName,
