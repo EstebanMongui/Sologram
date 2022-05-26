@@ -1,6 +1,6 @@
 const DATA_KEY = 'userImages'
 
-const getData = () =>{
+export const getData = () =>{
     const currentData = localStorage.getItem(DATA_KEY)
     
     if(!currentData) return []
