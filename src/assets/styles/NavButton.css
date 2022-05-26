@@ -1,0 +1,41 @@
+@import url(../icons/style.css);
+
+.nav-button__wrapper{
+    border: 0px;
+    border-radius: 0px;
+    background-color: transparent;
+    height: 100%;
+    text-align: center;
+}
+
+.icon{
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    padding: 0.25rem;
+}
+
+.icon-home{
+    color: var(--primary-action);
+    font-size: 1.5rem;
+}
+
+.nav-button__text{
+    align-items: center;
+    background-color: var(--primary-action);
+    color: #fff;
+    display: flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    max-width: 35px;
+    justify-content: center;
+    text-align: center;
+}
+
+.active .icon-home{
+    color: var(--primary-action-focus);
+}
+
+.active .nav-button__text{
+    background-color: var(--primary-action-focus);
+}

@@ -1,0 +1,41 @@
+.feed-card{
+    position: relative;
+    max-width: 500px;
+    width: 100vw;
+    box-sizing: border-box;
+    padding-bottom: 2rem;
+}
+.feed-card__info{
+    display: flex;
+    flex-direction: column;
+    padding: 0.3rem;
+}
+.feed-card__info--image-name{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-primary-color);
+}
+.feed-card__info--time-ago{
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: var(--text-secondary-color);
+}
+.feed-card__figure{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+.feed-card__figure::after{
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}
+.feed-card__figure--image{
+    position: absolute;
+    object-fit: cover;
+    display: block;
+    height: 100%;
+}

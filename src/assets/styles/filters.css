@@ -1,0 +1,12 @@
+.blur{
+    filter: blur(.5px) contrast(1.1) sepia(.1);
+}
+.gray-scale{
+    filter: grayscale(2) contrast(1.2) saturate(1.5);
+}
+.invert{
+    filter: invert(2) brightness(1.2) sepia(1.5);
+}
+.blue{
+    filter: sepia(.75) invert(1.4);
+}

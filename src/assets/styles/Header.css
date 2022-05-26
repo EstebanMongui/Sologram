@@ -1,0 +1,18 @@
+.header__wrapper{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    max-height: 70px;
+    width: 100%;
+    background-color: white;
+}
+
+.header__logo{
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.3rem;
+    font-family: 'Oleo Script', cursive;
+}
