@@ -1,8 +1,6 @@
 .button{
-    width: calc(100vw - 0.6rem);
-    height: 2.5rem;
+    height: 4rem;
     max-width: 500px;
-    margin: 0.3rem;
     box-sizing: border-box;
     border-radius: 0.5rem;
     background-color: var(--primary-action-focus);

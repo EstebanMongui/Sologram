@@ -5,7 +5,7 @@ import '../assets/styles/FiltersCarousel.css'
 const FiltersCarousel = ({ filters, imageUrl }) => {
   
     return (
-        <div className='filters-carousel'>
+        <div className='filters-carousel mt3 ml2'>
             {
                 filters.map(({id, name}) => {
                     return(

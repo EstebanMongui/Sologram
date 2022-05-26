@@ -6,6 +6,8 @@ import Button from '../components/Button'
 import { useHandleChange } from '../hooks/useHandleChange'
 import { saveData } from '../helpers/storage'
 
+import '../assets/styles/NewPost.css'
+
 const filters = [
     {id:'normal', name:'normal'},
     {id:'blur', name:'Blur'},
@@ -31,12 +33,18 @@ const NewPost = () => {
     }
 
     return (
-        <div>
-            <Input label={'Enter an image url:'} handleChange={ handleChange } value={ imageUrl }/>
+        <div className='new-post w-100'>
+            <dir className='pa2'>
+                <Input label={'Enter an image url:'} handleChange={ handleChange } value={ imageUrl }/>
+            </dir>
             <FilterPreview imageUrl={ imageUrl } imageName={imageName}/>
+            <div className='pa2'>
+                <Input label={'Give it a name:'} handleChange={ handleChangeImage } value={ imageName }/>
+            </div>
             <FiltersCarousel filters={filters} imageUrl={ imageUrl } />
-            <Input label={'Give it a name:'} handleChange={ handleChangeImage } value={ imageName }/>
-            <Button buttonText={'Post now!'} onClick={ handleClick }/>
+            <div className='pa2'>
+                <Button buttonText={'Post now!'} onClick={ handleClick }/>
+            </div>
         </div>
     )
 }

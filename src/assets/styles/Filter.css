@@ -1,7 +1,7 @@
 @import url(filters.css);
 
 .filter{
-    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .filter__name{
     color: black;

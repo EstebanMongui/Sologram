@@ -5,15 +5,12 @@
     text-align: center;
     font-weight: 500;
     color: var(--secondary-color);
-    width: 100vw;
 }
 .input__label{
     padding: 0.3rem 0;
-    width: 100%;
 }
 .input__field{
     height: 2rem;
-    width: 95%;
     padding: 0 0.5rem;
     box-sizing: border-box;
     border: solid 1.5px var(--primary-action);

@@ -17,7 +17,7 @@ const Button = ({ buttonText, onClick }) => {
     }, [state])
 
     return (
-        <button onClick={ handleClick } className={`button ${state}`} >
+        <button onClick={ handleClick } className={`button w-100 mt2 ${state}`} >
             { buttonText }
         </button>
     )
