@@ -1,0 +1,13 @@
+.feed__first-post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100vw;
+}
+
+.feed__first-post--text{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
