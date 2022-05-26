@@ -10,7 +10,7 @@ const Feed = () => {
     const images = getData()
 
     return (
-      <div className='Feed w-100'>
+      <div className='Feed w-100 mt5'>
         {   
             !images.length
             ?
