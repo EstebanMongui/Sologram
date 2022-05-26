@@ -2,8 +2,9 @@ import React, { useEffect, useRef, useState } from 'react'
 import LikeButton from './subcomponents/LikeButton'
 
 import '../assets/styles/FeedCard.css'
+import { updateData } from '../helpers/storage'
 
-const FeedCard = ({imageName, timeAgo, imageUrl, filterId}) => {
+const FeedCard = ({imageName, timeAgo, imageUrl, filterId, imageId}) => {
 
   const [clicks, setClicks] = useState(0)
   const [isLike, setIsLike] = useState(false)
@@ -11,7 +12,9 @@ const FeedCard = ({imageName, timeAgo, imageUrl, filterId}) => {
   const buttonRef = useRef(null);
 
   const onClick = () => {
+    const fieldsToUpdate = {like:!isLike}
     setIsLike(!isLike)
+    updateData({fieldsToUpdate, objectId:imageId})
   }
 
   const handleClick = () =>{
