@@ -33,7 +33,8 @@ const Feed = () => {
                 const timeAgo = calculateTime(timeStamp)
                 return(
                     <FeedCard
-                        key={id} 
+                        key={id}
+                        imageId={id} 
                         imageName={imageName} 
                         timeAgo={timeAgo} 
                         imageUrl={imageUrl} 
