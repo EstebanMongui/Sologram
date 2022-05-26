@@ -35,7 +35,7 @@
 }
 .feed-card__figure--image{
     position: absolute;
-    object-fit: fill;
+    object-fit: cover;
     display: block;
     height: 100%;
 }

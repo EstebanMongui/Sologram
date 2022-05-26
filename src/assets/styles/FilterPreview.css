@@ -24,6 +24,6 @@
 
 .filter-preview__wrapper--image{
     position: absolute;
-    object-fit: fill;
+    object-fit: cover;
     height: 100%;
 }
