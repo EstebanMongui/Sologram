@@ -8,11 +8,13 @@ const FiltersCarousel = ({ filters, imageUrl }) => {
         <div className='filters-carousel'>
             {
                 filters.map(({id, name}) => {
-                    <Filter 
-                        filterId={id} 
-                        filterName={name} 
-                        imageUrl={imageUrl}
-                    />
+                    return(
+                        <Filter 
+                            filterId={id} 
+                            filterName={name} 
+                            imageUrl={imageUrl}
+                        />
+                    )
                 })
             }
         </div>
