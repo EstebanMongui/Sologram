@@ -3,18 +3,24 @@ import LikeButton from './subcomponents/LikeButton'
 
 import '../assets/styles/FeedCard.css'
 import { updateData } from '../helpers/storage'
+import { useDispatch, useSelector } from 'react-redux'
+import { saveImage } from '../actions/images'
 
 const FeedCard = ({imageName, timeAgo, imageUrl, filterId, imageId}) => {
 
   const [clicks, setClicks] = useState(0)
   const [isLike, setIsLike] = useState(false)
-  
-  const buttonRef = useRef(null);
+  const dispatch = useDispatch()
+  const { images } = useSelector( state => state )
+  const buttonRef = useRef(null)
+
+  const {like:likeState} = images?.find(({id})=> id === imageId)
 
   const onClick = () => {
     const fieldsToUpdate = {like:!isLike}
+    const updatedImages = updateData({fieldsToUpdate, objectId:imageId})
     setIsLike(!isLike)
-    updateData({fieldsToUpdate, objectId:imageId})
+    dispatch(saveImage(updatedImages))
   }
 
   const handleClick = () =>{
@@ -29,7 +35,7 @@ const FeedCard = ({imageName, timeAgo, imageUrl, filterId, imageId}) => {
   }
 
   useEffect(()=>{
-    isLike
+    isLike || likeState 
     ?
     buttonRef.current.className = 'like-button clicked'
     :
