@@ -2,6 +2,8 @@
 
 Publish your own images, apply filters and mark your favorites.
 
+Visit it at [sologram-em](http://sologram-em.surge.sh/), Only available at mobile.
+
 ## How to run
 
 To run the sologram app at local follow the next commands:
